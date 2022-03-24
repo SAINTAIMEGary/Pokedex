@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<style>
+    p {
+        font-size: x-large;
+        font-style: normal;
+    }
+
+    body {
+        background-color: #e5e5e5;
+    }
+
+    header {
+        background-color: red;
+        border: solid black;
+        width: 80%;
+        display: block;
+        margin-left: 5%;
+
+
+    }
+
+    nav {
+        /* border: solid red; */
+        width: 80%;
+        display: block;
+        margin-left: 5%;
+        height: 100px;
+
+    }
+
+    h1 {
+
+        text-align: center;
+        text-decoration: underline;
+
+    }
+
+    #returnacceuil,
+    #pokeball {
+        float: left;
+        position: center;
+
+    }
+
+    #returnacceuil {
+        background-color: #e5e5e5;
+    }
+
+    #returnacceuil:hover {
+
+        background-color: red;
+        border: solid 2px black;
+
+    }
+
+
+    button {
+        transition-duration: 0.4s;
+    }
+
+    #info {
+        margin-left: 10%;
+        background-color: white;
+        font-size: 12px;
+        padding: 10px 50px;
+        border-radius: 12px;
+        color: black;
+        border: 2px solid #4CAF50;
+    }
+
+    #loca {
+        margin-left: 20%;
+        background-color: white;
+        font-size: 12px;
+        padding: 10px 50px;
+        border-radius: 12px;
+        color: black;
+        border: 2px solid #008CBA;
+    }
+
+    #evol {
+        margin-left: 25%;
+        background-color: white;
+        font-size: 12px;
+        padding: 10px 50px;
+        border-radius: 12px;
+        color: black;
+        border: 2px solid #A22522;
+
+    }
+
+    #info:hover {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    #loca:hover {
+        background-color: #008CBA;
+        color: white;
+    }
+
+    #evol:hover {
+        background-color: #A22522;
+        color: white;
+    }
+
+    #sala {
+        float: right;
+        position: center;
+    }
+
+    main {
+        border: solid black;
+        width: 80%;
+        height: 80%;
+        display: block;
+        margin-left: 5%;
+        background-color: white;
+
+    }
+
+    #fullsala {
+
+
+        float: left;
+        margin: 0 15px 15px 0;
+    }
+
+    table {
+        border: 1px solid black;
+        background-color: grey;
+        margin-left: 5%;
+        margin-top: 1%;
+
+
+    }
+
+    td {
+        border: 2px solid black;
+        background-color: white;
+
+    }
+
+    tfoot {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .tab {
+        background-color: #A22522;
+        color: white;
+        text-align: center;
+    }
+
+    #type {
+        display: block;
+        margin: auto;
+    }
+
+    .display {
+        display: none;
+    }
+
+    #evolutiontable {
+        margin-left: 40%;
+        background-color: #A22522;
+    }
+
+    th {
+        color: white
+    }
+
+    .tabledevo {
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+
+    .evol {
+        background-color: grey;
+        border: solid 0px;
+    }
+</style>
+
+
+<html>
+<button onclick="window.location.href='file:///home/rsma15/Bureau/PokedexBG/Pokedex.html';" id="returnacceuil"><img
+        src="http://pngimg.com/uploads/pokeball/pokeball_PNG22.png" width="80px" id="pokeball"></button>
+<header>
+
+    <img src="https://www.pokepedia.fr/images/8/89/Miniature_004_LGPE.png" width="100px" id="sala">
+    <h1> Salamèche № 004</h1>
+
+</header>
+<nav>
+
+    <button id="info" onclick="info()">Informations</button>
+    <button id="loca" onclick="loca()">Localisation</button>
+    <button id="evol" onclick="evol()">Evolution</button>
+
+
+</nav>
+
+
+
+
+<main class="info">
+
+    <img src="https://professorlotus.com/Sprites/Charmander.gif" width="230px" id="fullsala">
+
+    <p>
+        Salamèche (anglais: Charmander ; japonais: ヒトカゲ Hitokage) est le Pokémon de départ de type Feu offert par le
+        Professeur Chen dans la région de Kanto et par le Professeur Platane dans la région de Kalos.<br>
+        Salamèche est un Pokémon bipède et reptilien avec un corps orange tandis que son ventre et la plante de ses
+        pieds sont beiges. Ses bras et ses jambes sont courts, avec respectivement quatre doigts et trois griffes
+        chacune. Une flamme brûle au bout de la svelte queue de Salamèche, et elle flamboie depuis sa naissance. La
+        flamme peut servir d'indication quant à la santé et à l'humeur de Salamèche : elle brûle fièrement quand le
+        Pokémon est en pleine forme, doucement si le Pokémon est faible ou triste, ondoie quand il est heureux et
+        flamboie quand il est en colère. Il est dit qu'un Salamèche meurt si sa flamme s'éteint.<br>
+
+        Salamèche peut être trouvé dans les chaudes aires montagneuses. Cependant, il est trouvé encore plus fréquemment
+        sous la propriété d'un Dresseur.
+    </p>
+
+
+
+</main>
+<article class="info">
+    <table>
+
+        <tbody>
+            <tr>
+                <td class="tab">Type</td>
+                <td><img id="type"
+                        src="https://www.pokepedia.fr/images/thumb/f/fc/Miniature_Type_Feu_EB.png/68px-Miniature_Type_Feu_EB.png">
+                </td>
+            </tr>
+            <tr>
+                <td class="tab">Catégorie</td>
+                <td>Pokémon Lézard</td>
+            </tr>
+            <tr>
+                <td class="tab">Taille</td>
+                <td>0,6 m</td>
+            </tr>
+            <tr>
+                <td class="tab">Poids</td>
+                <td>8,5 kg</td>
+            </tr>
+            <tr>
+                <td class="tab">Talents</td>
+                <td>1. Brasier <br>
+                    2. Force Soleil </td>
+            </tr>
+        </tbody>
+    </table>
+</article>
+
+
+<main class="evol display">
+    <table id="evolutiontable">
+        <tr>
+            <th>Famille d'évolution de Salamèche :</th>
+        </tr>
+        <tr>
+            <td>
+                <img class="tabledevo" src="https://professorlotus.com/Sprites/Charmander.gif" width="150px"><br>
+                <p class="tabledevo">Salamèche</p>
+            </td>
+
+        </tr>
+        <tr>
+            <td class="tabledevo">Évolution au Lv.16 </td>
+        </tr>
+        <tr>
+            <td>
+                <img class="tabledevo" src="https://professorlotus.com/Sprites/Charmeleon.gif" width="150px"><br>
+                <p class="tabledevo">Reptincel</p>
+            </td>
+
+        </tr>
+        <tr>
+            <td class="tabledevo">Évolution au Lv.36 </td>
+        </tr>
+        <tr>
+            <td>
+                <img class="tabledevo" src="https://professorlotus.com/Sprites/Charizard.gif" width="200px"><br>
+                <p class="tabledevo">Dracofeu</p>
+            </td>
+
+        </tr>
+
+    </table>
+
+</main>
+
+<main class="loca display">
+    <table class="loca">
+        <tr>
+            <th>Version</th>
+            <th>Rareté</th>
+            <th>Lieu</th>
+            <th>Niveau</th>
+        </tr>
+        <tr>
+            <td>Soleil et Lune</td>
+            <td>Inéxistant</td>
+            <td>Échange</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td>Ultra-Solei et Ultra-Lune</td>
+            <td>Spécial</td>
+            <td>Dimanche, Route 3 (Scanner des Iles)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Soleil et Lune</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Soleil et Lune</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+
+</main>
+
+
+</html>
+<script src="app.js"></script>
